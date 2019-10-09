@@ -1,0 +1,102 @@
+.container{
+  display: grid;
+
+  grid-template-areas:
+    "header header header"
+    "nav content content";
+
+  grid-template-columns: 340px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 35px;
+
+  height: 100vh;
+  
+}
+
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  grid-area: header;
+  height: 150px;
+  width: 100%;
+  background-color: green;
+  color: black;
+}
+
+.flexbox-container{
+
+  border-style: solid;
+  border-color: white;
+  height: 100px;
+  width: 600px
+}
+
+.flexbox-container2{
+  display: flex;
+  flex-direction: row;
+ 
+  padding: 18px;
+}
+
+#smaller{
+  font-size: 18px;
+}
+
+nav {
+  grid-area: nav;
+  margin-left: 6rem;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  background: #ccc;
+  padding: 10px 0px 10px 10px;
+}
+
+#dp{
+border-radius: 25px;
+width: 180px;
+height: 180px;
+text-align: center;
+
+}
+
+#icons{
+  width:  30px;
+  height: 30px;
+}
+
+#thickline{
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+li{
+  padding: 10px;
+}
+/* The navigation menu links */
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  padding: 5px;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+a:hover {
+  color: #f1f1f1;
+}
+
+article {
+  grid-area: content;
+  margin-right: 6rem;
+  padding: 10px 0px 10px 100px;
+  width: 80%;
+  height: 100%;
+  background-color: #f1f1f1;
+}
