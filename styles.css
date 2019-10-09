@@ -1,16 +1,10 @@
-.container{
-  display: grid;
-
-  grid-template-areas:
-    "header header header"
-    "nav content content";
-
-  grid-template-columns: 340px 1fr;
-  grid-template-rows: auto 1fr auto;
-  grid-gap: 35px;
-
-  height: 100vh;
-  
+article {
+  grid-area: content;
+  margin-right: 6rem;
+  padding: 10px 0px 10px 100px;
+  width: 80%;
+  height: 100%;
+  background-color: white;
 }
 
 
@@ -27,6 +21,42 @@ header {
   background-color: green;
   color: black;
 }
+
+#dp{
+border-radius: 25px;
+width: 180px;
+height: 180px;
+text-align: center;
+
+}
+
+#icons{
+  width:  30px;
+  height: 30px;
+}
+
+#thickline{
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+
+
+.container{
+  display: grid;
+
+  grid-template-areas:
+    "header header header"
+    "nav content content";
+
+  grid-template-columns: 340px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 35px;
+
+  height: 100vh;
+  
+}
+
 
 .flexbox-container{
 
@@ -57,23 +87,7 @@ nav {
   padding: 10px 0px 10px 10px;
 }
 
-#dp{
-border-radius: 25px;
-width: 180px;
-height: 180px;
-text-align: center;
 
-}
-
-#icons{
-  width:  30px;
-  height: 30px;
-}
-
-#thickline{
-  border-radius: 5px;
-  border: 1px solid black;
-}
 
 li{
   padding: 10px;
@@ -92,11 +106,3 @@ a:hover {
   color: #f1f1f1;
 }
 
-article {
-  grid-area: content;
-  margin-right: 6rem;
-  padding: 10px 0px 10px 100px;
-  width: 80%;
-  height: 100%;
-  background-color: white;
-}
